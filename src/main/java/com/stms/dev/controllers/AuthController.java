@@ -39,7 +39,7 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.CREATED).body(message);
         }
     }
-
+    
     @PostMapping("login")
     public ResponseEntity<String> login(@Valid @RequestBody LoginRequest loginRequest) {
         try {
